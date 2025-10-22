@@ -1,17 +1,17 @@
-# Imagen base
+# Imagen base de Python slim (mejores prácticas)
 FROM python:3.10-slim
 
 # Directorio de trabajo
 WORKDIR /app
 
-# Copiar archivos
+# Copiar archivos (incluye app.py, requirements.txt, etc.)
 COPY . .
 
-# Instalar dependencias
+# Instalar dependencias con opción para optimizar la imagen
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Exponer puerto
+# Exponer el puerto de la aplicación Flask
 EXPOSE 3000
 
-# Ejecutar la app
+# Comando para ejecutar la aplicación
 CMD ["python", "app.py"]
