@@ -2,7 +2,7 @@ name: CI Flask App
 
 on:
   push:
-    branches: ["apellido"]
+    branches: ["maldonado"]
 
 jobs:
   build-and-test:
