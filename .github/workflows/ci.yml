@@ -22,5 +22,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+   # Ejecución de tests (1.5 Puntos)
     - name: Ejecutar tests
-      run: pytest -v
+      # ✅ CORRECCIÓN CLAVE: Añadir el directorio actual (la raíz) a la ruta de módulos de Python
+      run: PYTHONPATH=. pytest -v 
