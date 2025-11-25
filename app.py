@@ -181,7 +181,7 @@ HTML_TEMPLATE = """
 </head>
 <body>
     <div class="container">
-        <h1>🤖Prueba de test de sentimientos IA</h1>
+        <h1>🤖Examen de prueba IA</h1>
         <p class="subtitle">Proyecto CI/CD - Examen Final</p>
         
         <div class="info-box">

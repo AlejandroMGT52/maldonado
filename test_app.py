@@ -24,7 +24,7 @@ class TestFlaskApp(unittest.TestCase):
         """Test de la página principal"""
         response = self.app.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'Prueba de test de sentimientos IA', response.data)
+        self.assertIn(b'Examen de prueba IA', response.data)
     
     def test_info_endpoint(self):
         """Test del endpoint de información"""
